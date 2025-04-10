@@ -61,9 +61,9 @@ const Contact = () => {
 
       {/* Footer section */}
       <footer className="py-2 bg-gray-800 text-white text-center mt-4 mb-5">
-        {/* Copyright information */}
+        {/* Copyright */}
         <p>&copy; 2024 TECH-GAR. All rights reserved.</p>
-        {/* Link to navigate back to the top of the page */}
+        {/* Navigation back to top */}
         <div className="mt-1">
           <a href="#home" className="text-white hover:underline">Back to Top</a>
         </div>

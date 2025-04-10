@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}", // Include this line for the components folder
+    "./src/components/**/*.{js,jsx,ts,tsx}", // Include components folder
   ],
   theme: {
     extend: {
@@ -10,7 +10,7 @@ module.exports = {
         '11': '6rem',
         '18': '10rem',
         '30': '40rem',
-        "45p": '20%',
+        '45p': '20%',
       },
       fontSize: {
         'new': '1.19rem',
@@ -20,8 +20,8 @@ module.exports = {
       height: {
         'h8': '30rem',
         'h7': '20rem',
-        "h6": '17rem',
-        "h25": '25rem',
+        'h6': '17rem',
+        'h25': '25rem',
         'h10': '32rem',
         'h10s': '10rem',
         'h13': '13rem',
@@ -30,40 +30,33 @@ module.exports = {
         'h89': '40rem',
         'h94': '96%',
       },
-      screens: {
-        'max-md': { 'max': '850px' },
-        'max-w': { 'max': '650px' },
-        'maxx': { 'max': '768px' },
-        'md-min': '1220px',
-        'minx': '1220px',
-      },
-      padding: {
-        'phalf': '50%',
-      },
       width: {
         'w8': '45rem',
         'w10': '90%',
         'w95': '95%',
         'w3': '80%',
         'w3s': '100%',
-        'w70': '70%',
         'w10s': '10rem',
         'w4': '40rem',
         'w35': '35rem',
         'w7': '20rem',
         'whalf': '50%',
         'w13': '13rem',
-        "w6": '17rem',
+        'w6': '17rem',
+        'w70': '70%',
+      },
+      padding: {
+        'phalf': '50%',
       },
       gap: {
         'g22': '22rem',
       },
       colors: {
+        primary: "#1F2937",
+        accent: "#3B82F6",
+        highlight: "#F59E0B",
         primary2: "#1F2937",
         accent1: "#3B82F6",
-        highlight: "#F59E0B",
-        primary: '#1D4ED8',
-        accent: '#F97316',
       },
       borderRadius: {
         '4xl': '2rem',
@@ -73,6 +66,13 @@ module.exports = {
       borderWidth: {
         '3': '3px',
       },
+      screens: {
+        'max-md': { 'max': '850px' },
+        'max-w': { 'max': '650px' },
+        'maxx': { 'max': '768px' },
+        'md-min': '1220px',
+        'minx': '1220px',
+      },
       keyframes: {
         fadeInOut: {
           '0%, 45%': { opacity: '1' },
@@ -80,8 +80,8 @@ module.exports = {
           '100%': { opacity: '1' },
         },
         textPulse: {
-          '0%, 100%': { fontSize: '1rem' }, // Normal size
-          '50%': { fontSize: '1.5rem' },   // Enlarged size
+          '0%, 100%': { fontSize: '1rem' },
+          '50%': { fontSize: '1.5rem' },
         },
       },
       animation: {

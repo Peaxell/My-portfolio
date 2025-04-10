@@ -1,11 +1,6 @@
-// Importing necessary icons from FontAwesome for navigation functionality
-import { faHouseTsunami } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-// Importing React and useState for managing state within the component
 import React, { useState } from 'react';
+import { faHouseTsunami, faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Defining the sections of the website that the navbar will navigate to
 const sections = ['home', 'about', 'skills', 'project', 'contact'];
@@ -33,11 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo section with FontAwesome icon and brand name */}
         <h1 className="text-2xl font-bold">
-          <FontAwesomeIcon
-            className="text-4xl translate-y-1 text-accent"
-            icon={faHouseTsunami}
-          />{' '}
-          TECHGAR
+          <FontAwesomeIcon className="text-4xl translate-y-1 text-accent" icon={faHouseTsunami} /> TECHGAR
         </h1>
 
         {/* Mobile menu toggle button (hamburger icon or close icon based on state) */}
@@ -49,9 +40,7 @@ const Navbar = () => {
 
         {/* Navigation menu (responsive: hidden by default on smaller screens) */}
         <ul
-          className={`${isOpen ? 'flex' : 'hidden'} md:flex md:flex-row md:bg-transparent  
-          flex-col absolute top-full -right-3/4 p-4 md:w-auto md:right-0 w-full 
-          md:relative md:top-0 md:rounded-none md:p-0 rounded-4xl rounded-tl-none bg-gray-800`}
+          className={`${isOpen ? 'flex' : 'hidden'} md:flex md:flex-row md:bg-transparent flex-col absolute top-full -right-3/4 p-4 md:w-auto md:right-0 w-full md:relative md:top-0 md:rounded-none md:p-0 rounded-4xl rounded-tl-none bg-gray-800`}
         >
           {/* Dynamically rendering menu items based on the `sections` array */}
           {sections.map((section) => (
